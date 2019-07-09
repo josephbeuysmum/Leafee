@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DHn-iP-69V" customClass="StreetCell" customModule="LeafeeWireframes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DHn-iP-69V" id="GbE-wd-exX">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWT-nn-mEI">
+                        <rect key="frame" x="12" y="6" width="351" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Status&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz6-pe-55N">
+                        <rect key="frame" x="12" y="29" width="169.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Proximity&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF4-yz-YO5">
+                        <rect key="frame" x="193.5" y="29" width="169.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Vz6-pe-55N" secondAttribute="bottom" constant="5.5" id="2Rh-ri-bW9"/>
+                    <constraint firstItem="BWT-nn-mEI" firstAttribute="top" secondItem="GbE-wd-exX" secondAttribute="top" constant="6" id="34E-xq-4NV"/>
+                    <constraint firstAttribute="trailing" secondItem="BWT-nn-mEI" secondAttribute="trailing" constant="12" id="4ew-fR-sJT"/>
+                    <constraint firstItem="BWT-nn-mEI" firstAttribute="leading" secondItem="GbE-wd-exX" secondAttribute="leading" constant="12" id="G8P-PZ-doc"/>
+                    <constraint firstAttribute="trailing" secondItem="XF4-yz-YO5" secondAttribute="trailing" constant="12" id="JBP-NE-pSs"/>
+                    <constraint firstAttribute="bottom" secondItem="XF4-yz-YO5" secondAttribute="bottom" constant="5.5" id="dv1-uU-N93"/>
+                    <constraint firstItem="XF4-yz-YO5" firstAttribute="top" secondItem="BWT-nn-mEI" secondAttribute="bottom" constant="4" id="fVx-rV-1s3"/>
+                    <constraint firstItem="XF4-yz-YO5" firstAttribute="width" secondItem="Vz6-pe-55N" secondAttribute="width" id="hfF-Fz-fKp"/>
+                    <constraint firstItem="XF4-yz-YO5" firstAttribute="leading" secondItem="Vz6-pe-55N" secondAttribute="trailing" constant="12" id="lcR-bF-DJd"/>
+                    <constraint firstItem="Vz6-pe-55N" firstAttribute="leading" secondItem="GbE-wd-exX" secondAttribute="leading" constant="12" id="usu-48-ZbT"/>
+                    <constraint firstItem="Vz6-pe-55N" firstAttribute="top" secondItem="BWT-nn-mEI" secondAttribute="bottom" constant="4" id="xtE-TA-iWD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="BWT-nn-mEI" id="TXr-QY-rV1"/>
+                <outlet property="proximityLabel" destination="XF4-yz-YO5" id="8td-T1-xgF"/>
+                <outlet property="statusLabel" destination="Vz6-pe-55N" id="JiB-BB-a3I"/>
+            </connections>
+            <point key="canvasLocation" x="22" y="34"/>
+        </tableViewCell>
+    </objects>
+</document>
