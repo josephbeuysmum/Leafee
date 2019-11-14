@@ -16,6 +16,7 @@ struct Campaign: Codable, Identifiable, Profilable {
 	var startDate: Date
 	var endDate: Date
 	var location: Location
+	var leafletUrl: String?
 	var widerLocations: [Location]?
 	var categories: [Category]?
 	var description: String?
@@ -36,7 +37,6 @@ struct Campaign: Codable, Identifiable, Profilable {
 		return categories.map { $0.name }.joined(separator: ", ")
 	}
 
-//	var leaflet: Any?
 	
 //	var stats: ...
 	

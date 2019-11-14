@@ -20,15 +20,19 @@ struct CampaignView: View {
 					.lineLimit(nil)
 			}
 			List {
-				NavigationLink(destination: StreetsListView()) {
+				NavigationLink(destination: PDFView()) {
 					Text("Leaflet")
 				}
-				Text("Managers")
 				NavigationLink(destination: StreetsListView()) {
 					Text("Streets")
 				}
 				NavigationLink(destination: VolunteersListView()) {
 					Text("Volunteers")
+				}
+				campaign.widerLocations.map { _ in
+					NavigationLink(destination: RegionalManagersView()) {
+						Text("Regional Managers")
+					}
 				}
 			}
 			Spacer()
