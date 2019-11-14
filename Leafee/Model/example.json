@@ -1,0 +1,48 @@
+{
+	"id": "D73140C7-6FFE-4CFE-A794-539C01FB5BAB",
+	"userName": "EXPEE",
+	"displayName": "Xiao Peng",
+	"location": "Huddersfield",
+	"registrationDate": "2019-10-23T18:25:43.511Z",
+	"campaigns":
+	[
+		{
+			"id": "1267A289-D75E-46B6-BEC6-E6FC92D08A47",
+			"userId": "D73140C7-6FFE-4CFE-A794-539C01FB5BAB",
+			"name": "Huddersfield Against Flytipping",
+			"description": "There has lately been an increase in flytipping in the Huddersfield area. We no like!",
+			"creationDate": "2019-09-16T11:51:41.077Z",
+			"startDate": "2020-01-07T00:00:00.000Z",
+			"endDate": "2020-01-10T00:00:00.000Z",
+			"location":
+			{
+				"id": "39372393-FED4-436E-86A3-77FACB6C92C4",
+				"campaignId": "1267A289-D75E-46B6-BEC6-E6FC92D08A47",
+				"name": "Hudderfield",
+				"streets":
+				[
+					{
+						"id": "4FB909E9-5852-42EE-8A5E-55D878D759E1",
+						"name": "Acacia Avenue",
+					},
+					{
+						"id": "CD45AE99-F48A-4C8F-9E54-B994712821CE",
+						"name": "High Street",
+					},
+				],
+			},
+			"categories":
+			[
+				{
+					"id": "6EDC20B4-E949-4CFD-9C6D-B6527CDF9F66",
+					"name": "Recycling",
+				},
+				{
+					"id": "B9BE6D1A-E30B-4F36-AFAB-2352FFF5C3FE",
+					"name": "Social",
+				},
+			],
+			"description": "like, just some guy",
+		},
+	],
+}

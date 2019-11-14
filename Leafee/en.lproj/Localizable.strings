@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Leafee
+
+  Created by Richard Willis on 01/11/2019.
+  Copyright © 2019 Rich Text Format. All rights reserved.
+*/
+"existing_campaigns" = "Existing Campaigns";
+"find_campaign" = "Find Campaign";
+"in" = "in";
+"member_since" = "Member since";
+"my_profile" = "My Profile";
+"tabs_view_header" = "Home";
