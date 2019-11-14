@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// herehere probably time to think about async loading and look at examples in CombineAPI tutorial, see best how to load: pdfs and profile images, json too prob.
 struct CampaignView: View {
 	var campaign: Campaign
 	
