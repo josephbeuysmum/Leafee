@@ -5,9 +5,15 @@
   Created by Richard Willis on 01/11/2019.
   Copyright © 2019 Rich Text Format. All rights reserved.
 */
-"existing_campaigns" = "Existing Campaigns";
-"find_campaign" = "Find Campaign";
+
+"existing campaigns" = "Existing Campaigns";
+"find campaign" = "Find Campaign";
 "in" = "in";
-"member_since" = "Member since";
-"my_profile" = "My Profile";
-"tabs_view_header" = "Home";
+"leaflet view" = "Leaflet";
+"member since" = "Member since";
+"my profile" = "My Profile";
+"no campaign description" = "This campaign has no description";
+"regional managers view" = "Regional Managers";
+"streets view" = "Streets";
+"tabs header" = "Home";
+"volunteers view" = "Volunteers";

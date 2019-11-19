@@ -8,34 +8,27 @@
 
 import SwiftUI
 
-// herehere probably time to think about async loading and look at examples in CombineAPI tutorial, see best how to load: pdfs and profile images, json too prob.
 struct CampaignView: View {
 	var campaign: Campaign
 	
 	var body: some View {
 		VStack(alignment: .leading) {
 			ProfileHeaderView(profilable: campaign)
-			campaign.description.map { _ in
-				Text(campaign.description!)
-					.font(.body)
-					.lineLimit(nil)
+			Text(campaign.description ?? "no campaign description")
+				.font(.body)
+				.lineLimit(nil)
+			NavigationLink(destination: StreetsListView()) {
+				Text("streets view")
 			}
-			List {
-				NavigationLink(destination: PDFView()) {
-					Text("Leaflet")
-				}
-				NavigationLink(destination: StreetsListView()) {
-					Text("Streets")
-				}
-				NavigationLink(destination: VolunteersListView()) {
-					Text("Volunteers")
-				}
-				campaign.widerLocations.map { _ in
-					NavigationLink(destination: RegionalManagersView()) {
-						Text("Regional Managers")
-					}
-				}
+			NavigationLink(destination: VolunteersListView()) {
+				Text("volunteers view")
 			}
+			NavigationLink(destination: PDFView() {
+				print(#function, "...")
+			}) {
+				Text("leaflet view")
+			}
+			Text("regional managers view")
 			Spacer()
 		}
 	}

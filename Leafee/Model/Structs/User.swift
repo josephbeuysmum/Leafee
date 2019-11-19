@@ -26,7 +26,7 @@ struct User: Codable, Identifiable, Profilable {
 	
 	
 	var details: String? {
-		let prefix = NSLocalizedString("member_since", comment: "")
+		let prefix = NSLocalizedString("member since", comment: "")
 		let df = DateFormatter()
 		df.dateStyle = .medium
 		return "\(prefix) \(df.string(from: registrationDate))"

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct VolunteersListView: View {
 	var body: some View {
-    	Text("Hello Volunteers")
+    	Text("Volunteers List View")
 	}
 }
 

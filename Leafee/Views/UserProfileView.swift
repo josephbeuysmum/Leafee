@@ -10,7 +10,7 @@ import SwiftUI
 
 struct UserProfileView: View {
 	var body: some View {
-		Text("UP")
+		Text("User Profile View")
 	}
 }
 

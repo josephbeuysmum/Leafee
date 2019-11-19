@@ -10,7 +10,7 @@ import SwiftUI
 
 struct StreetsListView: View {
 	var body: some View {
-    	Text("Hello Streets")
+    	Text("Streets List View")
 	}
 }
 
