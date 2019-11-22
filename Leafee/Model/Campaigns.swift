@@ -12,7 +12,7 @@ class Campaigns: ObservableObject {
 	@Published var campaigns = [Campaign]()
 
 //	func add(_ campaign: Campaign) {
-//    	campaigns.append(campaign)
+//		campaigns.append(campaign)
 //	}
 //
 //	func remove(_ campaign: Campaign) {

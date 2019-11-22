@@ -16,10 +16,10 @@ struct ExistingCampaignsView: View {
 		VStack(alignment: .leading) {
 			List {
 				ForEach(user.campaigns ?? []) { campaign in
-					ExistingCampaignCell(campaign: campaign)
+					ExistingCampaignRow(campaign: campaign)
 				}
 			}
-			Spacer()
+//			Spacer()
 		}
 		.navigationBarTitle("Menu")
 	}

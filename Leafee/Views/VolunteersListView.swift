@@ -10,14 +10,14 @@ import SwiftUI
 
 struct VolunteersListView: View {
 	var body: some View {
-    	Text("Volunteers List View")
+		Text("Volunteers List View")
 	}
 }
 
 #if DEBUG
 struct VolunteersListView_Previews: PreviewProvider {
 	static var previews: some View {
-    	VolunteersListView()
+		VolunteersListView()
 	}
 }
 #endif

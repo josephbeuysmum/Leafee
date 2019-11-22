@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90C44AC23889BD000309309 /* StreetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90C44AB23889BD000309309 /* StreetRow.swift */; };
 		A92D877D237B5DC80091CCEC /* VolunteersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92D877C237B5DC80091CCEC /* VolunteersListView.swift */; };
 		A936674F2383ECA7003E7110 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A936674E2383ECA7003E7110 /* PDFView.swift */; };
 		A93667512383EFBE003E7110 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93667502383EFBE003E7110 /* Typealiases.swift */; };
-		A952708D237AEF5700826B1B /* ExistingCampaignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A952708C237AEF5700826B1B /* ExistingCampaignCell.swift */; };
+		A952708D237AEF5700826B1B /* ExistingCampaignRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A952708C237AEF5700826B1B /* ExistingCampaignRow.swift */; };
 		A952708F237AEFD500826B1B /* CampaignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A952708E237AEFD500826B1B /* CampaignView.swift */; };
 		A9590084237CB761004728DC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A959007C237CB761004728DC /* Location.swift */; };
 		A9590085237CB761004728DC /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = A959007D237CB761004728DC /* Street.swift */; };
@@ -60,10 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90C44AB23889BD000309309 /* StreetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StreetRow.swift; path = Leafee/StreetRow.swift; sourceTree = SOURCE_ROOT; };
 		A92D877C237B5DC80091CCEC /* VolunteersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteersListView.swift; sourceTree = "<group>"; };
 		A936674E2383ECA7003E7110 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		A93667502383EFBE003E7110 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		A952708C237AEF5700826B1B /* ExistingCampaignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingCampaignCell.swift; sourceTree = "<group>"; };
+		A952708C237AEF5700826B1B /* ExistingCampaignRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingCampaignRow.swift; sourceTree = "<group>"; };
 		A952708E237AEFD500826B1B /* CampaignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignView.swift; sourceTree = "<group>"; };
 		A959007C237CB761004728DC /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A959007D237CB761004728DC /* Street.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
@@ -142,7 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				A99F315F237975CF00B53277 /* ProfileHeaderView.swift */,
-				A952708C237AEF5700826B1B /* ExistingCampaignCell.swift */,
+				A952708C237AEF5700826B1B /* ExistingCampaignRow.swift */,
+				A90C44AB23889BD000309309 /* StreetRow.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -150,10 +153,10 @@
 		A959007B237CB761004728DC /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				A959007F237CB761004728DC /* example.json */,
 				A959007C237CB761004728DC /* Location.swift */,
 				A959007D237CB761004728DC /* Street.swift */,
 				A959007E237CB761004728DC /* Campaign.swift */,
-				A959007F237CB761004728DC /* example.json */,
 				A9590080237CB761004728DC /* User.swift */,
 				A9590081237CB761004728DC /* Category.swift */,
 			);
@@ -401,6 +404,7 @@
 				A93667512383EFBE003E7110 /* Typealiases.swift in Sources */,
 				A959008F237CB7B3004728DC /* StreetsListView.swift in Sources */,
 				A99C6E61236C47CC0026F434 /* ExistingCampaignsView.swift in Sources */,
+				A90C44AC23889BD000309309 /* StreetRow.swift in Sources */,
 				A9F5FDF22375BF96008F1C4E /* Bundle+Extension.swift in Sources */,
 				A9F5FDF42375C27D008F1C4E /* DateFormatter+Extension.swift in Sources */,
 				A9590084237CB761004728DC /* Location.swift in Sources */,
@@ -409,7 +413,7 @@
 				A99C6E18236C35050026F434 /* SceneDelegate.swift in Sources */,
 				A99F3160237975CF00B53277 /* ProfileHeaderView.swift in Sources */,
 				A959008D237CB781004728DC /* Campaigns.swift in Sources */,
-				A952708D237AEF5700826B1B /* ExistingCampaignCell.swift in Sources */,
+				A952708D237AEF5700826B1B /* ExistingCampaignRow.swift in Sources */,
 				A99C6E58236C36410026F434 /* TabsView.swift in Sources */,
 				A9590086237CB761004728DC /* Campaign.swift in Sources */,
 				A952708F237AEFD500826B1B /* CampaignView.swift in Sources */,

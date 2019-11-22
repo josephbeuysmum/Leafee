@@ -13,7 +13,7 @@ struct PDFView: UIViewControllerRepresentable {
 	var closure: BasicClosure
 	
 	func makeUIViewController(context: Context) -> PDFViewController {
-    	return viewController
+		return viewController
 	}
 
 	func updateUIViewController(_ uiViewController: PDFViewController, context: Context) {
@@ -25,25 +25,27 @@ struct PDFView: UIViewControllerRepresentable {
 	}
 	
 	class Coordinator: NSObject, PDFDelegate {
-    	var closure: BasicClosure
+		var closure: BasicClosure
 		init(_ viewController: PDFViewController, closure: @escaping BasicClosure) {
-	    	self.closure = closure
-	    	super.init()
-	    	viewController.delegate = self
-    	}
+			self.closure = closure
+			super.init()
+			viewController.delegate = self
+		}
 		
-    	func someDelegateFunction() {
+		func someDelegateFunction() {
 			print(#function, "...")
 //			closure()
-    	}
+		}
 	}
 }
 
+#if DEBUG
 struct PDFView_Previews: PreviewProvider {
 	static var previews: some View {
 		PDFView(closure: {})
 	}
 }
+#endif
 
 protocol PDFDelegate {
 //	func someDelegateFunction()

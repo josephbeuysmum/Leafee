@@ -1,5 +1,5 @@
 //
-//  ExistingCampaignCell.swift
+//  ExistingCampaignRow.swift
 //  Leafee
 //
 //  Created by Richard Willis on 12/11/2019.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ExistingCampaignCell: View {
+struct ExistingCampaignRow: View {
 	var campaign: Campaign
 	
 	var body: some View {
@@ -19,9 +19,9 @@ struct ExistingCampaignCell: View {
 }
 
 #if DEBUG
-struct ExistingCampaignCell_Previews: PreviewProvider {
+struct ExistingCampaignRow_Previews: PreviewProvider {
 	static var previews: some View {
-		ExistingCampaignCell(campaign: Campaign.example)
+		ExistingCampaignRow(campaign: Campaign.example)
 	}
 }
 #endif

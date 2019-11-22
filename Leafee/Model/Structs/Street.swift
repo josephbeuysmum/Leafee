@@ -13,4 +13,9 @@ struct Street: Codable, Identifiable {
 	var name: String
 //	var gpsLocation: Any?
 	var volunteer: User?
+	
+	#if DEBUG
+	static let example1 = Street(id: UUID(), name: "Right Road", volunteer: User.example)
+	static let example2 = Street(id: UUID(), name: "Left Lane")
+	#endif
 }

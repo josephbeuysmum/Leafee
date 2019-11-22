@@ -24,6 +24,14 @@
 					{
 						"id": "4FB909E9-5852-42EE-8A5E-55D878D759E1",
 						"name": "Acacia Avenue",
+						"volunteer":
+						{
+							"id": "40C7D731-4CFE-6FFE-A794-B5BAB539C01F",
+							"userName": "TeamAnchor",
+							"displayName": "Terri Mank",
+							"location": "Huddersfield",
+							"registrationDate": "2019-09-11T10:01:39.144Z",
+						}
 					},
 					{
 						"id": "CD45AE99-F48A-4C8F-9E54-B994712821CE",

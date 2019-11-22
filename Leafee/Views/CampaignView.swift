@@ -17,8 +17,10 @@ struct CampaignView: View {
 			Text(campaign.description ?? "no campaign description")
 				.font(.body)
 				.lineLimit(nil)
-			NavigationLink(destination: StreetsListView()) {
-				Text("streets view")
+			campaign.location.streets.map { _ in
+				NavigationLink(destination: StreetsListView(streets: campaign.location.streets!)) {
+					Text("streets view")
+				}
 			}
 			NavigationLink(destination: VolunteersListView()) {
 				Text("volunteers view")

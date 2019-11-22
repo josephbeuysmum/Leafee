@@ -13,7 +13,7 @@ class PDFViewController: UIViewController {
 	var delegate: PDFDelegate?
 
 	override func viewDidLoad() {
-    	super.viewDidLoad()
+		super.viewDidLoad()
 		let pdfView = PDFKit.PDFView()
 
 		pdfView.translatesAutoresizingMaskIntoConstraints = false

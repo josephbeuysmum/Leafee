@@ -9,15 +9,21 @@
 import SwiftUI
 
 struct StreetsListView: View {
+	var streets: [Street]
+	
 	var body: some View {
-    	Text("Streets List View")
+		List {
+			ForEach(streets) { street in
+				StreetRow(street: street)
+			}
+		}
 	}
 }
 
 #if DEBUG
 struct StreetsListView_Previews: PreviewProvider {
 	static var previews: some View {
-    	StreetsListView()
+		StreetsListView(streets: [Street.example1, Street.example2])
 	}
 }
 #endif
