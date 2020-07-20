@@ -1,8 +1,22 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { FlatList, Text, View, StyleSheet } from "react-native";
+import useResults from '../hooks/useResults';
 
 function DashScreen({}) {
-    return <Text>DashScreen</Text>;
+    const [searchApi, results, errorMessage] = useResults();
+
+    return (
+        <View>
+            <Text>DashScreen {results.length}</Text>
+            <FlatList 
+                data={results}
+                keyExtractor={result => result.id}
+                renderItem={({ item }) => {
+                    return <Text>{item.title}</Text>
+                }}
+             />
+        </View>        
+    )
 };
 
 const styles = StyleSheet.create({});
