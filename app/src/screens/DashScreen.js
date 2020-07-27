@@ -7,7 +7,7 @@ function DashScreen({}) {
 
     return (
         <View>
-            <Text>DashScreen {results.length}</Text>
+            <Text>Dashy Screen 1</Text>
             <FlatList 
                 data={results}
                 keyExtractor={result => result.id}
